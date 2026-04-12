@@ -9,7 +9,11 @@
             "hash": "5c7713549e25fd01ad27e085cd0bfb78b7d9ed9c341c56cf70d3b96b4e58f26b"
         }
     },
-    "bin": [["weed.exe", "seaweed.exe", "seaweedfs.exe"]],
+    "bin": [
+        "weed.exe",
+        ["weed.exe", "seaweed"],
+        ["weed.exe", "seaweedfs"]
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
