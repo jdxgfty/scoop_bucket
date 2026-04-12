@@ -1,7 +1,7 @@
 {
     "version": "4.19",
     "description": "SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables",
-    "homepage": "https://seaweedfs.com/",
+    "homepage": "https://github.com/seaweedfs/seaweedfs",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
