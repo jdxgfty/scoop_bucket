@@ -1,0 +1,25 @@
+{
+    "version": "4.19",
+    "description": "SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables",
+    "homepage": "https://seaweedfs.com/",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/seaweedfs/seaweedfs/releases/download/4.19/windows_amd64.zip",
+            "hash": "5c7713549e25fd01ad27e085cd0bfb78b7d9ed9c341c56cf70d3b96b4e58f26b"
+        }
+    },
+    "bin": [["weed.exe", "seaweed.exe", "seaweedfs.exe"]],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/seaweedfs/seaweedfs/releases/download/$version/windows_amd64.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/seaweedfs/seaweedfs/releases/tag/$version",
+            "regex": "sha256\\($basename\\)\\s+($sha256)"
+        }
+    }
+}
