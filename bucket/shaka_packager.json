@@ -5,7 +5,7 @@
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/shaka-project/shaka-packager/releases/download/v3.7.2/packager-win-x64.exe",
+            "url": "https://github.com/shaka-project/shaka-packager/releases/download/v3.7.2/packager-win-x64.exe#/shaka-packager.exe",
             "hash": "61e26b68884c81d107ebd5b7ba6499bfa5a589b90245dac9683c5d50f999574a"
         }
     },
