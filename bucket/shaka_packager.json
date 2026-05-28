@@ -1,0 +1,31 @@
+{
+    "version": "v3.7.2",
+    "description": "A media packaging and development framework for VOD and Live DASH and HLS applications, supporting Common Encryption for Widevine and other DRM Systems.",
+    "homepage": "https://shaka-project.github.io/shaka-packager/",
+    "license": "BSD-3-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shaka-project/shaka-packager/releases/download/v3.7.2/packager-win-x64.exe",
+            "hash": "61e26b68884c81d107ebd5b7ba6499bfa5a589b90245dac9683c5d50f999574a"
+        }
+    },
+    "bin": [
+        "shaka-packager.exe",
+        [
+            "shaka-packager.exe",
+            "shaka_packager"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shaka-project/shaka-packager/releases/download/$version/packager-win-x64.exe"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/shaka-project/shaka-packager/releases/tag/$version",
+            "regex": "sha256\\($basename\\)\\s+($sha256)"
+        }
+    }
+}
